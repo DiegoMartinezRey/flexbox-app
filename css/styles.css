@@ -25,5 +25,161 @@ img {
 
 body {
   margin: 0;
-  font-family: sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+
+h2 {
+  margin: 0;
+}
+p {
+  margin: 0;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-items: center;
+  padding: 85px 32px 0 32px;
+}
+.text {
+  margin: 0;
+  color: #4d4f62;
+  text-align: center;
+  width: 311px;
+}
+.title {
+  font-weight: lighter;
+  font-size: 24px;
+}
+.subtitle {
+  font-weight: bold;
+  font-size: 24px;
+}
+.description {
+  font-size: 15px;
+  line-height: 25px;
+}
+
+@media screen and (width>1024px) {
+  .text {
+    width: 540px;
+  }
+  .title {
+    font-weight: 200;
+    font-style: normal;
+    font-size: 36px;
+  }
+  .subtitle {
+    font-weight: 600;
+    font-style: normal;
+    font-size: 36px;
+  }
+  .description {
+    font-weight: 400;
+    font-style: normal;
+  }
+}
+
+.container {
+  padding: 64px 0 80px 0;
+  height: 1114px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (width>1024px) {
+  .container {
+    width: 1110px;
+    height: 674px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.container-card {
+  height: 468px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (width>1024px) {
+  .container-card {
+    height: 530px;
+  }
+}
+
+.card {
+  position: relative;
+  width: 311px;
+  height: 222px;
+  border-radius: 8px;
+  padding: 32px;
+  box-shadow: 0 15px 30px -11px #83a6d2;
+}
+.card::before {
+  content: "";
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+@media screen and (width>1024px) {
+  .card {
+    width: 350px;
+    height: 250px;
+  }
+}
+
+.supervisor-card::before {
+  background-color: #44d3d2;
+}
+.team-card::before {
+  background-color: #ea5454;
+}
+.karma-card::before {
+  background-color: #fcae4a;
+}
+.calculator-card::before {
+  background-color: #549ef2;
+}
+
+.card-images {
+  position: absolute;
+  bottom: 32px;
+  right: 32px;
+  width: 57px;
+  height: 57px;
+}
+@media screen and (width>1024px) {
+  .card-images {
+    width: 64px;
+    height: 64px;
+  }
+}
+
+.title-cards {
+  font-size: 20px;
+  color: #4d4f62;
+  font-weight: 600;
+  font-style: normal;
+}
+.subtitle-cards {
+  padding: 10px 0;
+  font-size: 13px;
+  color: #4d4f62;
+  font-weight: 400;
+  font-style: normal;
 }
